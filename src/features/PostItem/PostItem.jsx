@@ -13,7 +13,7 @@ const PostItem = ({post}) => {
                 <div
                     className="item-list__description">Body: {body.length > 200 ? body.substring(0, 200) + "..." : body}</div>
             </div>
-            <a className={"item-list__button"} href={`/post/${id}`}>Просмотр</a>
+            <a className={"item-list__button"} href={`/picasso-react/post/${id}`}>Просмотр</a>
         </div>
     );
 };
