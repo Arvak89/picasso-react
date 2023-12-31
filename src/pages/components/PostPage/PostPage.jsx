@@ -14,9 +14,9 @@ const PostPage = () => {
     return (
         <div className={"post-page"}>
             <a className={"post-page__button"} onClick={() => history(-1)}>Назад</a>
-            <div className={"post-page__id"}>№ {data.id}</div>
-            <div className={"post-page__title"}>Title: {data.title}</div>
-            <div className={"post-page__body"}>Body: {data.body}</div>
+            <div className={"post-page__id"}>№{data.id}</div>
+            <div className={"post-page__title"}><strong>Title:</strong> {data.title}</div>
+            <div className={"post-page__body"}><strong>Body:</strong> {data.body}</div>
         </div>
     );
 };

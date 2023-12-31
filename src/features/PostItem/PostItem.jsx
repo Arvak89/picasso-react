@@ -6,13 +6,9 @@ const PostItem = ({post}) => {
 
     return (
         <div className={"item-list"}>
-            <div className="item-list__content">
-                <div className="item-list__number">№ {id}</div>
-                <div
-                    className="item-list__title">Title: {title.length > 100 ? title.substring(0, 100) + "..." : title}</div>
-                <div
-                    className="item-list__description">Body: {body.length > 200 ? body.substring(0, 200) + "..." : body}</div>
-            </div>
+            <div className="item-list__number">№{id}</div>
+            <div className="item-list__title"><strong>Title:</strong> {title}</div>
+            <div className="item-list__description"><strong>Body:</strong> {body}</div>
             <a className={"item-list__button"} href={`/picasso-react/post/${id}`}>Просмотр</a>
         </div>
     );

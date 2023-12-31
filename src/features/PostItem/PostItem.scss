@@ -1,34 +1,39 @@
 .item-list {
 
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: flex-start;
   align-items: center;
-  background: #5bc7c7;
+  padding: 25px;
   border-radius: 10px;
-  height: 60px;
-
-  &__content {
-    align-items: center;
-    margin-right: 15px;
-  }
+  background: #5bc7c7;
+  gap: 10px;
 
   &__number {
+    flex: 0 0 2vw;
   }
 
   &__title {
+    white-space: nowrap;
+    flex: 0 0 20vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__description {
+    white-space: nowrap;
+    flex: 1 1 60vw;
+    margin-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__button {
     background: #6e86e0;
     padding: 5px;
-    border-radius: 5px  ;
+    border-radius: 5px;
     color: white;
 
-    &:hover{
+    &:hover {
       background: #1e42d2;
       cursor: pointer;
     }

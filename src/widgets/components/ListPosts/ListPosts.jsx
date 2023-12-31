@@ -26,7 +26,7 @@ const ListPosts = () => {
     const onScrollDown = (e) => {
 
         const scrolledToBottom =
-            e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100  && start < 80
+            e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 50  && start < 80
         if (scrolledToBottom && !isFetching) {
             console.log("Down");
             setStart(start + 4);
@@ -37,7 +37,7 @@ const ListPosts = () => {
     const onScrollUp = (e) => {
 
         const scrolledToTop =
-            e.target.documentElement.scrollTop < 100 && start > 0
+            e.target.documentElement.scrollTop < 50 && start > 0
         if (scrolledToTop && !isFetching) {
             console.log("Up");
             setStart(start - 4);
