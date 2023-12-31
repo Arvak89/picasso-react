@@ -1,0 +1,36 @@
+.item-list {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background: #5bc7c7;
+  border-radius: 10px;
+  height: 60px;
+
+  &__content {
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &__number {
+  }
+
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__button {
+    background: #6e86e0;
+    padding: 5px;
+    border-radius: 5px  ;
+    color: white;
+
+    &:hover{
+      background: #1e42d2;
+      cursor: pointer;
+    }
+  }
+}
